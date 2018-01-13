@@ -1,0 +1,25 @@
+{
+  "name": "eloquent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.0.6"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlottebrf/eloquent-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlottebrf/eloquent-js/issues"
+  },
+  "homepage": "https://github.com/charlottebrf/eloquent-js#readme"
+}
