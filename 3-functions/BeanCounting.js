@@ -7,3 +7,9 @@ export const countBS = (String) => {
     let matches = String.match(/[B]/g);
     return matches.length;
 };
+
+export const countChar = (String, Char) => {
+    let charToBeMatched = Char;
+    let matches = String.match(charToBeMatched);
+    return matches.length;
+};
