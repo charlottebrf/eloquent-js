@@ -5,5 +5,11 @@
 // Create function isEven, function should accept a number parameter & return a boolean
 
 export const isEven = (positiveInteger) => {
-    return positiveInteger % 2 === 0;
+    if (positiveInteger === 0 ) {
+        return true;
+    } else if (positiveInteger === 1) {
+        return false;
+    } else {
+        return isEven(positiveInteger - 2);
+    }
 };
