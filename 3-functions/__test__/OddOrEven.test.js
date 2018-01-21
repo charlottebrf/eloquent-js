@@ -8,8 +8,8 @@ test('returns false when odd', () => {
     expect(isEven(1)).toBe(false);
 });
 
-test.skip('returns false when odd', () => {
-    expect(isEven(50)).toBe(false);
+test('returns false when odd', () => {
+    expect(isEven(50)).toBe(true);
 });
 
 test('returns false when odd', () => {
