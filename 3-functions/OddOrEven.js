@@ -7,9 +7,10 @@
 export const isEven = (positiveInteger) => {
     if (positiveInteger === 0 ) {
         return true;
-    } else if (positiveInteger === 1) {
-        return false;
-    } else {
-        return isEven(positiveInteger - 2);
     }
+
+    if (positiveInteger === 1) {
+        return false;
+    }
+    return isEven(positiveInteger - 2);
 };
