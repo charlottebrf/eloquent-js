@@ -1,3 +1,11 @@
 export const reverseArray = (arrayToBeInversed) => {
-    return arrayToBeInversed.reverse();
+    let output = [];
+    for(let i = arrayToBeInversed.length; i > 0; i--) {
+        output.push(arrayToBeInversed.pop());
+    }
+    return output;
+};
+
+export const reverseArrayInPlace = (arrayToBeInversed) => {
+    return arrayToBeInversed.sort(() => 1);
 };
