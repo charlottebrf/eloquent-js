@@ -1,8 +1,8 @@
 export const range = (start, end, step = 1) => {
     let list = [];
-    for (let i = start; i <= end; i += step) {
-        list.push(i);
-    }
+        for (let i = start; i <= end; i += step) {
+            list.push(i);
+        }
     return list;
 };
 

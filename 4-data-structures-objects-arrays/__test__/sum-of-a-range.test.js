@@ -11,3 +11,7 @@ test('returns the sum of an array of numbers', () => {
 test('when given an optional third parameter, returns array from start up to end & including end using step', () => {
     expect(range(1, 10, 2)).toEqual([1,3,5,7,9]);
 });
+
+test.skip('when given an optional negative third parameter, returns array from start up to end & including end using step', () => {
+    expect(range(5, 2, -1)).toEqual([5,4,3,2]);
+});
