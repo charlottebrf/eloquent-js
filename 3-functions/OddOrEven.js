@@ -4,7 +4,7 @@
 // * For any other number N, its evenness is the same as N-2
 // Create function isEven, function should accept a number parameter & return a boolean
 
-const isEven = (positiveInteger) => {
+export const isEven = (positiveInteger) => {
     let maybeEven = positiveInteger - 2;
     if (positiveInteger % 2 === 0)
         return true;
@@ -12,6 +12,4 @@ const isEven = (positiveInteger) => {
         return false;
     else
         return isEven(maybeEven);
-}
-
-module.exports = isEven;
+};
