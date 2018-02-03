@@ -1,4 +1,4 @@
-export const reverseArray = (arrayToBeInversed) => {
+export const arrayToList = (arrayToBeInversed) => {
     let output = [];
     for(let i = arrayToBeInversed.length; i > 0; i--) {
         output.push(arrayToBeInversed.pop());
