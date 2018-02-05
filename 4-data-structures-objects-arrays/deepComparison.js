@@ -11,4 +11,3 @@ export const deepEqual = (toBeCompared1, toBeCompared2) => {
         return false;
     }
 };
-

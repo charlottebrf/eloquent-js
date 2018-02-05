@@ -12,10 +12,15 @@ export const arrayToList = (array) => {
 };
 
 export const listToArray = (list) => {
-    let first = { ...list }.value;
-    let second = { ...list }.rest.value;
-    let third = { ...list }.rest.rest.value;
-    return [first, second, third];
+    // let arrayOfValues = Object.keys(list).map(e => list[e]);
+    // return [...new Set(arrayOfValues)];
+    let element = list;
+    let results = [];
+    while (element.rest !== null) {
+        element = element.rest;
+        results.push(element.value);
+    }
+    return results.unshift(list.value);
 };
 
 export const addElementToFrontOfList = (element, list) => {
