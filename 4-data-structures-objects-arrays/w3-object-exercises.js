@@ -11,3 +11,7 @@ export const deleteProperty = (object) => {
 export const printObject = (object) => {
   return console.log(object);
 };
+
+export const measureObject = (object) => {
+  return listProperties(object).length;
+};

@@ -1,4 +1,4 @@
-import { listProperties, deleteProperty, printObject } from '../w3-object-exercises';
+import { listProperties, measureObject, deleteProperty, printObject } from '../w3-object-exercises';
 
 describe("managing objects", () => {
   const student = {
@@ -19,5 +19,9 @@ describe("managing objects", () => {
 
     let updatedObject = deleteProperty(student);
     expect(printObject(updatedObject)).toEqual(console.log(student1));
+  });
+
+  test("gets the length of an object", () => {
+    expect(measureObject(student)).toEqual(3);
   });
 });
