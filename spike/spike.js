@@ -5,6 +5,7 @@ export const reasonAndEffectiveDateToArray = (object) => {
 };
 
 export const transitionsToArray = (object) => {
+    // ToDo: be more specific than using an object.keys & object.values
     let transitions = object['transitions'];
     let keys = Object.keys(transitions);
     let values = Object.values(transitions);

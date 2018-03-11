@@ -1,12 +1,13 @@
 import {reasonAndEffectiveDateToArray, transitionsToArray, concatArrays, data} from './spike';
 
 
+//all keys are needed
 describe('keys and values to a nested array', () => {
     const history = {
         'transitions': {
             'type': 'APPLY',
             'from': '21-03-18',
-            'to': '21-03-19'
+            'to': '21-03-19',
         },
         'effectiveDate': '04-09-19',
         'reason': 'GENERAL',
@@ -32,3 +33,11 @@ describe('keys and values to a nested array', () => {
         expect(data(history)).toEqual(concatonated);
     });
 });
+
+// there is only transitions
+
+
+// there are only transitions + reasons
+
+
+// there are only transitions + effectiveDate
