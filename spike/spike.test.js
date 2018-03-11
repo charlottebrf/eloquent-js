@@ -1,15 +1,18 @@
-import { reasonAndEffectiveDateToArray, transitionsToArray, concatArrays } from './spike';
+import {reasonAndEffectiveDateToArray, transitionsToArray, concatArrays, data} from './spike';
 
-describe('keyAndValueToArray', () => {
+
+describe('keys and values to a nested array', () => {
     const history = {
-        'transitions': { 'type': 'APPLY',
+        'transitions': {
+            'type': 'APPLY',
             'from': '21-03-18',
-            'to': '21-03-19'},
+            'to': '21-03-19'
+        },
         'effectiveDate': '04-09-19',
         'reason': 'GENERAL',
     };
 
-    let reasonAndEffectiveDate =[['reason', 'GENERAL'], ['effectiveDate', '04-09-19']];
+    let reasonAndEffectiveDate = [['reason', 'GENERAL'], ['effectiveDate', '04-09-19']];
     let transitions = [['type', 'APPLY'], ['from', '21-03-18'], ['to', '21-03-19']];
     let concatonated = [['reason', 'GENERAL'], ['effectiveDate', '04-09-19'], ['type', 'APPLY'], ['from', '21-03-18'], ['to', '21-03-19']];
 
@@ -23,5 +26,9 @@ describe('keyAndValueToArray', () => {
 
     test('joins reasonAndEffectiveDate and transitions into a single array', () => {
         expect(concatArrays(reasonAndEffectiveDate, transitions)).toEqual(concatonated);
+    });
+
+    test('given an object returns a nested array of reason, effectiveDate & transition key & value pairs', () => {
+        expect(data(history)).toEqual(concatonated);
     });
 });

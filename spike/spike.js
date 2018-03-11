@@ -17,3 +17,9 @@ export const transitionsToArray = (object) => {
 export const concatArrays = (array1, array2) => {
     return array1.concat(array2);
 };
+
+export const data = (object) => {
+    let array1 = reasonAndEffectiveDateToArray(object);
+    let array2 = transitionsToArray(object);
+    return concatArrays(array1, array2);
+};
