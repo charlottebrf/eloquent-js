@@ -28,7 +28,7 @@ function length(block) {
 }
 
 describe("a blockchain", () => {
-  it("starts with a content and a lenght of 1", () => {
+  it("starts with a content and a length of 1", () => {
     let newChain = block(23);
 
     expect(length(newChain)).toEqual(1);
@@ -42,7 +42,7 @@ describe("a blockchain", () => {
     expect(length(newChain)).toEqual(2);
   });
 
-  it("push many things into ma' block chain", () => {
+  it("push many things into the chain", () => {
     let newChain = block(23);
     newChain.push(77);
     newChain.push(42);
@@ -57,7 +57,7 @@ describe("a blockchain", () => {
     expect(length(newChain)).toEqual(9);
   });
 
-  it("push many things into ma' block chain", () => {
+  it("push more things into the chain", () => {
     let newChain = block(23);
     newChain.push(77);
     newChain.push(42);

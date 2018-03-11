@@ -63,7 +63,7 @@ describe('arrays', () => {
 
         let list2 = {
             value: 1,
-            rest: {
+ 1           rest: {
                 value: 2,
                 rest: {
                     value: 3,

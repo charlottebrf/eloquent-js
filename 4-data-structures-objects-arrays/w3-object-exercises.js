@@ -15,3 +15,9 @@ export const printObject = (object) => {
 export const measureObject = (object) => {
   return listProperties(object).length;
 };
+
+export const readingStatus = (object) => {
+  //step into the block
+  //for each block print all of the values
+  return Object.values(object);
+};
